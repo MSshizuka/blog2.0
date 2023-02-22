@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "target": "esnext", // 指定编译后的版本
+    "module": "esnext", // 指定使用的模块化标准 commonjs umd amd ESModule
+    "moduleResolution": "node", //选择模块解析策略
+    "strict": true, // 启用严格类型检查
+    "noLib": false, // 是否启用库文件
+    "forceConsistentCasingInFileNames": true, // 不允许对同一文件使用不一致的大小写引用
+    "allowSyntheticDefaultImports": true, // 允许从没有默认导出的模块中默认导入
+    "strictFunctionTypes": false, //否使用函数参数双向协变检查
+    "jsx": "preserve", //指定jsx代码用于的开发环境
+    "baseUrl": ".", // 解析非相对模块名称的基本目录
+    "allowJs": true, //是否允许编译JS文件
+    "sourceMap": true, //编译时是否资源映射(生成.map文件)
+    "esModuleInterop": true, // 通过导入内容创建命名空间，实现CommonJS和ES模块之间的互操作性
+    "resolveJsonModule": true, // 解析json模块(ts文件中直接引用json文件)
+    "noUnusedLocals": true, //检查是否有定义了但是没有使用变量
+    "noUnusedParameters": true, //检测是否在函数中没有使用的参数
+    "experimentalDecorators": true, //是否启用实验性的装饰器特性 @func(){}
+    "lib": ["dom", "esnext"], // 使用到的库
+    "noImplicitAny": false, // 没有设置明确的类型 默认any
+    "skipLibCheck": true, //略过库检查
+    "types": ["vite/client"], // 需要包含的模块 会加载到全局
+    "removeComments": true, // 编译时移除注释
+    "paths": {
+      // 配置别名
+      "/@/*": ["src/*"],
+      "/#/*": ["types/*"]
+    }
+  },
+  "include": [
+    // 哪些是需要执行以上规则的
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "types/**/*.d.ts",
+    "types/**/*.ts",
+    "build/**/*.ts",
+    "build/**/*.d.ts",
+    "vite.config.ts"
+  ],
+  "exclude": ["node_modules", "dist", "**/*.js"] //排除哪些文件
+}

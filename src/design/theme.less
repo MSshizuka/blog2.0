@@ -1,0 +1,85 @@
+.bg-white {
+  background-color: @component-background !important;
+}
+
+html[data-theme='light'] {
+  .text-secondary {
+    color: rgb(0 0 0 / 45%);
+  }
+
+  .ant-alert-success {
+    background-color: #f6ffed;
+    border: 1px solid #b7eb8f;
+  }
+
+  .ant-alert-error {
+    background-color: #fff2f0;
+    border: 1px solid #ffccc7;
+  }
+
+  .ant-alert-warning {
+    background-color: #fffbe6;
+    border: 1px solid #ffe58f;
+  }
+
+  :not(:root):fullscreen::backdrop {
+    background-color: @layout-body-background !important;
+  }
+}
+
+[data-theme='dark'] {
+  .text-secondary {
+    color: #8b949e;
+  }
+
+  .ant-card-grid-hoverable:hover {
+    box-shadow: 0 3px 6px -4px rgb(0 0 0 / 48%), 0 6px 16px 0 rgb(0 0 0 / 32%),
+      0 9px 28px 8px rgb(0 0 0 / 20%);
+  }
+
+  .ant-card-grid {
+    box-shadow: 1px 0 0 0 #434343, 0 1px 0 0 #434343, 1px 1px 0 0 #434343, 1px 0 0 0 #434343 inset,
+      0 1px 0 0 #434343 inset;
+  }
+
+  .ant-calendar-selected-day .ant-calendar-date {
+    color: rgb(0 0 0 / 80%);
+  }
+
+  .ant-select-tree li .ant-select-tree-node-content-wrapper.ant-select-tree-node-selected {
+    color: rgb(0 0 0 / 90%);
+  }
+}
+
+.ui.label {
+  // border-color: #27b7f5;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  // background-color: #97dffd;
+  background: linear-gradient(
+    166deg,
+    #61cf6b36,
+    #4233e43a,
+    #e74d3c42,
+    #8d44ad42,
+    #40e1d146,
+    #ffff0141
+  );
+  background-size: 500%;
+  animation: gradual 17s linear infinite;
+  margin: 5px 0 15px 2px;
+  font-size: 14px;
+  position: absolute;
+  top: 10px;
+  left: -10px;
+  border-radius: 0 4px 4px 0;
+  padding: 7px 11.2px 7px 32px;
+  display: inline-block;
+  color: #fff;
+  z-index: 10;
+}
+
+.ui.label a {
+  color: #fff;
+  line-height: 100%;
+}

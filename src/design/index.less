@@ -1,0 +1,158 @@
+@import 'transition/index.less';
+@import 'var/index.less';
+@import 'public.less';
+@import 'ant/index.less';
+@import './theme.less';
+
+.ant-dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  color: #fff !important;
+}
+
+.ant-dropdown-menu-item:hover {
+  background-color: transparent !important;
+  color: #fff !important;
+}
+
+@basic-menu-prefix-cls: ~'@{namespace}-basic-menu';
+
+.ant-menu-dark .ant-menu-sub,
+.ant-menu.ant-menu-dark .ant-menu-sub {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background-color: transparent !important;
+}
+
+input:-webkit-autofill {
+  box-shadow: 0 0 0 1000px white inset !important;
+}
+
+:-webkit-autofill {
+  transition: background-color 5000s ease-in-out 0s !important;
+}
+
+html {
+  overflow: hidden;
+  text-size-adjust: 100%;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: visible !important;
+  overflow-x: hidden !important;
+  cursor: url('/@/assets/images/cursor.ico'), auto;
+
+  &.color-weak {
+    filter: invert(80%);
+  }
+
+  &.gray-mode {
+    filter: grayscale(100%);
+    filter: progid:dximagetransform.microsoft.basicimage(grayscale=1);
+  }
+}
+
+p {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+a:focus,
+a:active,
+button,
+div,
+svg,
+span {
+  outline: none !important;
+}
+
+.sup-basic-menu__sidebar-hor.ant-menu-horizontal {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  border-color: transparent;
+}
+
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected {
+  color: #fff !important;
+}
+
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected::after {
+  border-bottom: 2px solid #fff !important;
+}
+
+.ant-menu-light .ant-menu-item:hover,
+.ant-menu-light .ant-menu-item-active,
+.ant-menu-light .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
+.ant-menu-light .ant-menu-submenu-active,
+.ant-menu-light .ant-menu-submenu-title:hover {
+  color: #fff !important;
+}
+
+.ant-menu-submenu-popup > .ant-menu {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.ant-drawer-content {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.ant-drawer-header,
+.sup-menu-light,
+.sup-menu-light.sup-menu-vertical .sup-menu-item-active:not(.sup-menu-submenu) {
+  background-color: transparent !important;
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.sup-menu {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.sup-menu-vertical .sup-menu-item:hover,
+.sup-menu-vertical .sup-menu-submenu-title:hover {
+  color: #fff !important;
+}
+
+.sup-menu-light.sup-menu-vertical .sup-menu-item-active:not(.sup-menu-submenu),
+.sup-menu-light.sup-menu-vertical .sup-menu-item-active.sup-menu-submenu {
+  color: #fff !important;
+}
+
+.ant-drawer-content > .ant-drawer-wrapper-body > .ant-drawer-header {
+  background-color: rgba(255, 255, 255) !important;
+}
+
+.ant-drawer-content > .ant-drawer-wrapper-body > .ant-drawer-header.ant-drawer-header-close-only {
+  background-color: transparent !important;
+}
+.sup-basic-drawer .ant-drawer-body {
+  color: #333;
+}
+
+.two-line {
+  display: -webkit-inline-box;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}

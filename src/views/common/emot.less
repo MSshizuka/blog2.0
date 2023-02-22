@@ -1,0 +1,121 @@
+.OwO {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 20px;
+
+  .emo-img {
+    object-fit: cover;
+    max-width: 40px;
+    max-height: 40px;
+  }
+
+  .OwO-logo {
+    position: relative;
+    border-radius: 4px;
+    color: #444;
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #ddd;
+    font-size: 13px;
+    padding: 0 6px;
+    cursor: pointer;
+    height: 30px;
+    box-sizing: border-box;
+    z-index: 2;
+    line-height: 30px;
+
+    &:hover {
+      animation: dance 5s infinite ease-in-out;
+      -webkit-animation: dance 5s infinite ease-in-out;
+    }
+  }
+
+  .OwO-body {
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ddd;
+    z-index: 1;
+    top: 29px;
+    border-radius: 0 4px 4px 4px;
+    display: none;
+  }
+}
+
+.OwO-open {
+  .OwO-logo {
+    border-radius: 4px 4px 0 0;
+    border-bottom: none;
+
+    &:hover {
+      animation: none;
+      -webkit-animation: none;
+    }
+  }
+
+  .OwO-body {
+    display: block;
+
+    .OwO-items {
+      max-height: 197px;
+      overflow: scroll;
+      font-size: 0;
+      padding: 10px;
+      z-index: 1;
+
+      .OwO-item {
+        background: #f7f7f7;
+        padding: 5px 10px;
+        border-radius: 5px;
+        display: inline-block;
+        margin: 0 10px 12px 0;
+        transition: 0.3s;
+        line-height: 19px;
+        font-size: 20px;
+        cursor: pointer;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+
+        &:hover {
+          background: #eee;
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+            0 1px 5px 0 rgba(0, 0, 0, 0.12);
+          animation: a 5s infinite ease-in-out;
+          -webkit-animation: a 5s infinite ease-in-out;
+        }
+      }
+    }
+
+    .OwO-bar {
+      width: 100%;
+      height: 30px;
+      border-top: 1px solid #ddd;
+      background: #fff;
+      border-radius: 0 0 4px 4px;
+      color: #444;
+
+      .OwO-packages {
+        li {
+          display: inline-block;
+          line-height: 30px;
+          font-size: 14px;
+          padding: 0 10px;
+          cursor: pointer;
+          margin-right: 3px;
+          text-align: center;
+
+          &:first-of-type {
+            border-radius: 0 0 0 3px;
+          }
+        }
+
+        .active {
+          color: #efbd47;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

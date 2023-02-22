@@ -1,0 +1,68 @@
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+:deep(.ant-form-item-control-input-content) {
+  width: 240px;
+  background-color: transparent !important;
+
+  input {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 10px;
+    margin: 8px 0;
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+
+  input::placeholder {
+    color: #fff;
+  }
+
+  input:focus {
+    color: #a262ad;
+    outline: none !important;
+    border-bottom: 1px solid #a262ad80;
+    transition: all 0.5s;
+    box-shadow: none;
+  }
+
+  input:focus::placeholder {
+    opacity: 0;
+  }
+}
+
+:deep(.ant-form-item-has-error :not(.ant-input-disabled):not(.ant-input-borderless).ant-input) {
+  box-shadow: none !important;
+  background-color: transparent !important;
+  border-color: #ed6f6f !important;
+}
+
+button {
+  margin-top: 35px;
+  background-color: #f6f6f6;
+  outline: none;
+  border-radius: 5px;
+  color: #a262ad !important;
+  letter-spacing: 2px;
+  border: none;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed !important;
+}
+
+button:hover {
+  background-color: #a262ad !important;
+  color: #f6f6f6 !important;
+  transition: background-color 0.5s ease !important;
+}
