@@ -15,7 +15,7 @@
 - 获取项目代码
 
 ```bash
-git clone https://git.shizuka.icu/ajuna/blog2.0.git
+git clone https://github.com/MSshizuka/blog2.0
 ```
 
 - 安装依赖

@@ -34,13 +34,13 @@
         />
       </template>
     </Tooltip>
-    <Tooltip title="gitea" placement="top">
+    <Tooltip title="github" placement="top">
       <template #default>
         <Icon
           icon="simple-icons:github"
           :size="30"
           class="cursor-pointer github"
-          @click="toExternalLink('gitea')"
+          @click="toExternalLink('github')"
         />
       </template>
     </Tooltip>
@@ -65,6 +65,7 @@
     const externalLinkMap = {
       bilibili: 'https://space.bilibili.com/258968863',
       gitea: 'https://git.shizuka.icu/ajuna/blog2.0.git',
+      github: 'https://github.com/MSshizuka/blog2.0'
     };
     window.open(externalLinkMap[key], '_blank');
   };
